@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick - erickjavierquiroztoro@gmail.com">
+    <meta name="description" content="Mi primera Wallet-digital">
+    <meta name="keyboards" content="HTML5, CSS, bootstraps, JavaScript, jQuery">
+    <meta name="robots" content="index, follow">
+
+     <link rel="shortcut icon" href="../assets/img/wallet_logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/bootstraps.css">
+ <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <title>Wallet - Últimos Movimientos</title>
+  <style>
+    body { padding: 20px; }
+    .container { max-width: 400px; margin: 0 auto; }
+    .text-income { color: rgb(1, 145, 1); }
+    .text-expense { color: rgb(191, 0, 0); }
+  </style>
+</head>
+<body class="transactions-wallet">
+  <div class="container">
+    <h2>Últimos Movimientos</h2> 
+
+    <div class="saldo-box">
+      Saldo actual: <strong data-balance>$0</strong>
+    </div>
+
+    <ul class="list-group mb-3" id="transactionsList">
+    </ul>
+ 
+    <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/transactions.js"></script>
+</body>
+</html>
+ 

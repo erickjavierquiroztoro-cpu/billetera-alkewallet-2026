@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick - erickjavierquiroztoro@gmail.com">
+    <meta name="description" content="Mi primera Wallet-digital">
+    <meta name="keyboards" content="HTML5, CSS, bootstraps, JavaScript, jQuery">
+    <meta name="robots" content="index, follow">
+  
+     <link rel="shortcut icon" href="../assets/img/wallet_logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/bootstraps.css">
+ <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <title>Wallet - Menú Principal</title>
+  <style>
+    body { padding: 20px; }
+    .container { max-width: 400px; margin: 0 auto; }
+  </style>
+</head>
+<body class="menu-wallet">
+  <div class="container">
+    <h2>Menú Principal</h2>
+    <div class="saldo-box">
+      Saldo actual: <strong data-balance>$0</strong>
+    </div>
+    <a href="deposit.html" class="btn btn-success btn-block mb-2">Depositar</a>
+    <a href="sendmoney.html" class="btn btn-primary btn-block mb-2">Enviar Dinero</a>
+    <a href="transactions.html" class="btn btn-secondary btn-block mb-2">Últimos Movimientos</a>
+    <a href="withdraw.html" class="btn btn-warning btn-block mb-2">Retirar fondos</a>
+    <hr>
+    <a href="login.html" class="btn btn-outline-danger btn-block" data-logout>Cerrar sesión</a>
+    
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script>
+    jQuery(function () {
+      window.AlkeApp.requireAuth();
+    });
+  </script>
+</body>
+</html>
+ 

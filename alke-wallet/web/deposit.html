@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick - erickjavierquiroztoro@gmail.com">
+    <meta name="description" content="Mi primera Wallet-digital">
+    <meta name="keyboards" content="HTML5, CSS, bootstraps, JavaScript, jQuery">
+    <meta name="robots" content="index, follow">
+
+   <link rel="shortcut icon" href="../assets/img/wallet_logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/bootstraps.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <title>Wallet - Depositar</title>
+  <style>
+    body { padding: 20px; }
+    .container { max-width: 400px; margin: 0 auto; }
+  </style>
+</head>
+<body class="deposit-wallet">
+  <div class="container">
+    <h2>Depositar</h2>
+    <div class="saldo-box">
+      Saldo actual: <strong data-balance>$0</strong>
+    </div>
+    <div class="alert d-none" id="depositMessage" role="alert"></div>
+    <form id="depositForm" novalidate>
+      <div class="form-group">
+        <label for="amount">Monto a depositar:</label>
+        <input type="number" class="form-control" id="amount" min="1" step="1" placeholder="Ej: 1000">
+      </div>
+      <button type="submit" class="btn btn-success">Realizar depósito</button>
+      <a href="menu.html" class="btn btn-secondary ml-2">Volver</a>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/deposit.js"></script>
+</body>
+</html>
+ 

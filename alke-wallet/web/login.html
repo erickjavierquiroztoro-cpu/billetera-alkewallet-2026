@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick - erickjavierquiroztoro@gmail.com">
+    <meta name="description" content="Mi primera Wallet-digital">
+    <meta name="keyboards" content="HTML5, CSS, bootstraps, JavaScript, jQuery">
+    <meta name="robots" content="index, follow">
+  
+    <link rel="shortcut icon" href="../assets/img/wallet_logo.svg" type="image/x-icon">
+  
+  <link rel="stylesheet" href="../assets/css/bootstraps.css">
+ <link rel="stylesheet" href="../assets/css/styles.css">
+  
+  <title>Wallet - Login</title>
+
+  <style>
+
+    body { 
+        padding: 20px; }
+
+    .container { 
+        max-width: 400px; 
+        margin: 0 auto; }
+
+  </style>
+</head>
+<body class="login-wallet">
+  <div class="container">
+
+    <h2>Inicio de sesión</h2>
+    <div class="alert d-none" id="loginMessage" role="alert"></div>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingresá tu contraseña">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+      <a href="index.html" class="btn btn-secondary ml-2">Volver</a>
+      
+      
+    </form>
+     <p class="text-muted mt-3 mb-0">Demo / clave: Usuario@gmail.com / 1234</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/storage.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/login.js"></script>
+  
+</body>
+
+</html>
